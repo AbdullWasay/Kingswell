@@ -1,0 +1,226 @@
+
+Kingswell Estate Agents Website Brief
+Brand Name
+Kingswell Estate Agents
+Slogan
+“Move Like Royalty, Move Well.”
+Areas Covered
+	•	Catford
+	•	Lee
+	•	Hither Green
+	•	Lewisham
+	•	South East London
+
+Overall Vision
+I want the website to feel:
+	•	Premium
+	•	Luxury
+	•	Trustworthy
+	•	Modern
+	•	Clean
+	•	Easy to navigate
+	•	Similar quality to Dexters and KFH
+	•	With the exclusivity and elegance of Queenwood Property
+The website should position Kingswell as:
+	•	The go-to estate agency in Catford, Lee & Hither Green
+	•	A modern luxury agency
+	•	Community-focused but high-end
+	•	Strong in both sales and lettings
+
+Website Style & Branding
+Colour Scheme
+	•	Dark Green
+	•	Gold
+	•	White
+	•	Black accents
+Design Feel
+	•	Elegant and premium
+	•	Smooth animations/transitions
+	•	Large professional property imagery
+	•	Minimal clutter
+	•	Mobile-first responsive design
+
+Pages Required
+1. Homepage
+The homepage should include:
+Hero Section
+	•	Large luxury property image/video
+	•	Search bar for properties
+	•	CTA buttons:
+	•	Book Valuation
+	•	Properties For Sale
+	•	Properties To Rent
+	•	Contact Us
+Intro Section
+Short introduction about Kingswell Estate Agents.
+Featured Properties
+Carousel/grid with latest listings.
+Why Choose Kingswell
+Include:
+	•	Local area expertise
+	•	Modern marketing
+	•	Professional photography
+	•	Social media marketing
+	•	Trusted advisors
+	•	Fast communication
+Areas We Cover
+Sections for:
+	•	Catford
+	•	Lee
+	•	Hither Green
+	•	Lewisham
+Testimonials
+Google review style testimonials.
+Valuation CTA
+Strong call-to-action section: “Book Your Free Property Valuation”
+Footer
+Include:
+	•	Contact details
+	•	Social media links
+	•	Opening hours
+	•	Quick links
+	•	Compliance logos
+
+2. Property Search Pages
+Sales Listings
+Lettings Listings
+Features required:
+	•	Advanced property filters
+	•	Map search
+	•	Property cards
+	•	High-quality image galleries
+	•	Floorplans
+	•	EPC section
+	•	Enquiry forms
+	•	Mortgage calculator
+	•	Save/share properties
+
+3. Individual Property Pages
+Each property page should include:
+	•	Large image gallery
+	•	Full description
+	•	Property features
+	•	Floorplans
+	•	EPC
+	•	Google Maps integration
+	•	Request viewing form
+	•	WhatsApp enquiry button
+	•	Similar properties section
+
+4. About Us Page
+Should communicate:
+	•	Professionalism
+	•	Luxury brand identity
+	•	Local knowledge
+	•	Personal approach
+Need:
+	•	Team profiles/photos
+	•	Company mission
+	•	Why Kingswell is different
+
+5. Valuation Page
+This is extremely important.
+Should include:
+	•	Instant valuation lead form
+	•	“Book a free valuation” CTA
+	•	Reasons to choose Kingswell
+	•	Seller/Landlord benefits
+	•	Lead capture integrated to CRM/email
+
+6. Landlords Page
+Include:
+	•	Lettings services
+	•	Fully managed option
+	•	Tenant find option
+	•	Compliance support
+	•	Rental valuation form
+
+7. Buyers & Tenants Pages
+Separate pages explaining:
+	•	Buying process
+	•	Renting process
+	•	Mortgage support
+	•	Area guides
+
+8. Area Guides
+Dedicated SEO pages for:
+	•	Catford
+	•	Lee
+	•	Hither Green
+	•	Lewisham
+Include:
+	•	Schools
+	•	Transport
+	•	Lifestyle
+	•	Property market insights
+	•	Local amenities
+
+Functional Requirements
+MUST HAVE FEATURES
+CRM Integration
+Ability to integrate with:
+	•	Alto
+	•	Reapit
+	•	Street OR another estate agency CRM
+Property Feed Integration
+Automatic property uploads from Rightmove/Zoopla/OnTheMarket feeds.
+Lead Capture
+Forms connected to:
+	•	Email
+	•	CRM
+	•	WhatsApp
+Mobile Optimisation
+Website must perform perfectly on mobile.
+SEO Optimisation
+Developer must:
+	•	Optimise page speed
+	•	Optimise metadata
+	•	Structure URLs correctly
+	•	Include schema markup
+	•	Optimise for local SEO
+Social Media Integration
+Instagram feed integration preferred.
+Google Reviews Integration
+Live reviews feed if possible.
+WhatsApp Integration
+Clickable WhatsApp button throughout website.
+
+Technical Requirements
+Website Platform
+Preferred:
+	•	WordPress OR
+	•	Custom React/Next.js website with CMS
+CMS Requirements
+I need to easily:
+	•	Add/edit properties
+	•	Upload blogs
+	•	Change images/text
+	•	Add testimonials
+	•	Edit area guides
+
+SEO Goals
+The website should rank for:
+	•	Estate agents in Catford
+	•	Estate agents in Lee
+	•	Estate agents in Hither Green
+	•	Letting agents in Catford
+	•	Property for sale in Catford
+	•	Flats to rent in Lee
+	•	Houses for sale in Hither Green
+
+Competitor Features I Like
+From Dexters
+	•	Professional clean layout
+	•	Easy property search
+	•	Strong call-to-actions
+	•	Corporate luxury feel 
+From KFH
+	•	Local area authority
+	•	Area pages
+	•	User-friendly navigation
+	•	Community-focused branding 
+From Queenwood
+	•	Elegant premium design
+	•	Sophisticated branding
+	•	Exclusive luxury feel
+	•	Strong visuals and storytelling

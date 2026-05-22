@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-kingswell-gold px-6 py-3 text-sm font-semibold uppercase tracking-wider text-kingswell-green transition-all duration-300 hover:bg-kingswell-gold-light hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border-2 border-kingswell-gold px-6 py-3 text-sm font-semibold uppercase tracking-wider text-kingswell-gold transition-all duration-300 hover:bg-kingswell-gold hover:text-kingswell-green;
+  }
+
+  .btn-white {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-white px-6 py-3 text-sm font-semibold uppercase tracking-wider text-kingswell-green transition-all duration-300 hover:bg-gray-100;
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-12;
+  }
+
+  .heading-display {
+    @apply font-serif text-3xl font-normal tracking-wide text-kingswell-green md:text-4xl lg:text-5xl;
+  }
+
+  .heading-section {
+    @apply font-serif text-2xl font-normal tracking-wide text-kingswell-green md:text-3xl;
+  }
+
+  .gold-divider {
+    @apply mx-auto h-px w-24 bg-kingswell-gold;
+  }
+}

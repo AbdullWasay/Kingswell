@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Local Area Expertise",
+    "description": "Deep knowledge of Catford, Lee, Hither Green, and Lewisham — we know every street, school, and selling point.",
+    "icon": "MapPin"
+  },
+  {
+    "title": "Modern Marketing",
+    "description": "Cutting-edge digital campaigns, premium portals, and targeted social media to reach the right buyers.",
+    "icon": "Megaphone"
+  },
+  {
+    "title": "Professional Photography",
+    "description": "Every property photographed to magazine standards — because first impressions sell homes.",
+    "icon": "Camera"
+  },
+  {
+    "title": "Social Media Marketing",
+    "description": "Instagram, Facebook, and TikTok campaigns that showcase your property to thousands of engaged followers.",
+    "icon": "Share2"
+  },
+  {
+    "title": "Trusted Advisors",
+    "description": "Honest, transparent advice from a team that puts your interests first — no pressure, just expertise.",
+    "icon": "Shield"
+  },
+  {
+    "title": "Fast Communication",
+    "description": "Same-day responses, WhatsApp updates, and a dedicated point of contact throughout your journey.",
+    "icon": "Zap"
+  }
+]

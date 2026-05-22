@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Sarah Mitchell",
+    "text": "Kingswell made selling our Catford home effortless. Professional photography, brilliant marketing, and we achieved above asking price within two weeks.",
+    "rating": 5,
+    "date": "2026-03-15"
+  },
+  {
+    "id": "2",
+    "name": "James & Priya Okonkwo",
+    "text": "As first-time buyers in Lee, the team guided us through every step. Their local knowledge was invaluable — we found our dream home in Hither Green.",
+    "rating": 5,
+    "date": "2026-02-28"
+  },
+  {
+    "id": "3",
+    "name": "David Chen",
+    "text": "Our rental property in Lewisham is managed flawlessly. Kingswell handle everything — tenants, compliance, maintenance. Highly recommend their fully managed service.",
+    "rating": 5,
+    "date": "2026-01-20"
+  },
+  {
+    "id": "4",
+    "name": "Emma Richardson",
+    "text": "Fast communication, honest advice, and a genuinely personal approach. Kingswell are the go-to agents in South East London.",
+    "rating": 5,
+    "date": "2025-12-10"
+  }
+]

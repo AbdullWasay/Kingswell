@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "catford",
+    "name": "Catford",
+    "tagline": "Vibrant community, excellent value, superb transport",
+    "heroImage": "https://images.unsplash.com/photo-1516159007068-3076cb36913e?w=1200&q=80",
+    "overview": "Catford is one of South East London's most exciting areas, offering excellent value, a thriving high street, and outstanding transport links via Catford and Catford Bridge stations.",
+    "schools": ["Prendergast Ladywell School", "St Dunstan's College (nearby)", "Torridon Road Primary", "Bonus Pastor Catholic College"],
+    "transport": ["Catford station — London Bridge in 15 mins", "Catford Bridge — Victoria line connections", "Multiple bus routes to central London", "Cycle routes to Greenwich and Lewisham"],
+    "lifestyle": ["Broadway Theatre", "Rushey Green independent shops", "Mountsfield Park", "Catford Food Market", "Growing café and restaurant scene"],
+    "marketInsights": "Catford has seen strong price growth as buyers discover its value compared to neighbouring areas. Average house prices remain competitive, with Victorian terraces and modern developments both in demand.",
+    "amenities": ["Sainsbury's & Lidl supermarkets", "Catford Mews shopping centre", "Local gyms and leisure centre", "Healthcare centres on Rushey Green"]
+  },
+  {
+    "slug": "lee",
+    "name": "Lee",
+    "tagline": "Village charm meets city convenience",
+    "heroImage": "https://images.unsplash.com/photo-1449844908441-882e2426ad0b?w=1200&q=80",
+    "overview": "Lee offers a delightful village atmosphere with tree-lined streets, independent boutiques, and excellent schools — all within easy reach of central London.",
+    "schools": ["Brindishe Lee Primary", "John Ball Primary", "Trinity Church of England School", "Blackheath High School (nearby)"],
+    "transport": ["Lee station — London Bridge in 12 mins", "Hither Green station nearby", "Bus routes to Greenwich and Lewisham", "Easy access to A205 South Circular"],
+    "lifestyle": ["Lee Green village shops", "Manor House Gardens", "The Old Tiger's Head pub", "Weekend farmers' market", "Blackheath Village nearby"],
+    "marketInsights": "Lee commands premium prices for period properties and family homes. Strong demand from families and professionals relocating from Zone 1 keeps the market buoyant.",
+    "amenities": ["Co-op and independent grocers", "Lee High Road restaurants", "Manor Park", "Local dental and medical practices"]
+  },
+  {
+    "slug": "hither-green",
+    "name": "Hither Green",
+    "tagline": "Leafy streets, family-friendly, superb schools",
+    "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+    "overview": "Hither Green is a sought-after residential enclave known for its leafy streets, excellent schools, and strong community spirit — a hidden gem in South East London.",
+    "schools": ["Torridon Primary School", "St Saviour's Catholic Primary", "Brindishe Green Primary", "Prendergast Vale College"],
+    "transport": ["Hither Green station — Charing Cross in 20 mins", "Lee station 5 mins walk", "Bus 273 to Lewisham and Tower Bridge", "Quick access to A20"],
+    "lifestyle": ["Hither Green Lane independent shops", "Mountsfield Park", "The Station Hotel", "Community events and fairs", "Proximity to Blackheath"],
+    "marketInsights": "Hither Green consistently attracts families seeking space and schools. Detached and semi-detached homes achieve strong prices, with limited stock keeping demand high.",
+    "amenities": ["Local convenience stores", "Hither Green community centre", "Parks and playgrounds", "GP surgeries on Verdant Lane"]
+  },
+  {
+    "slug": "lewisham",
+    "name": "Lewisham",
+    "tagline": "Regeneration, riverside living, urban energy",
+    "heroImage": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&q=80",
+    "overview": "Lewisham is undergoing exciting regeneration, with new developments, improved transport, and a vibrant cultural scene making it one of London's most dynamic boroughs.",
+    "schools": ["Addey and Stanhope School", "St Stephen's Primary", "Conisborough College", "Goldsmiths University nearby"],
+    "transport": ["Lewisham DLR — Canary Wharf in 15 mins", "Lewisham station — London Bridge in 10 mins", "Elizabeth line connections at Canary Wharf", "Extensive bus network"],
+    "lifestyle": ["Lewisham Shopping Centre", "Broadway Theatre", "Horniman Museum nearby", "Riverside walks at Loampit Vale", "Diverse dining scene"],
+    "marketInsights": "Lewisham offers diverse property from Victorian terraces to luxury riverside apartments. Strong rental demand and ongoing regeneration support continued growth.",
+    "amenities": ["Lewisham Shopping Centre", "University Hospital Lewisham", "Sports centres and gyms", "Major supermarket chains"]
+  }
+]
