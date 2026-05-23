@@ -12,12 +12,13 @@ import {
 } from "lucide-react";
 import PropertySearchBar from "@/components/PropertySearchBar";
 import PropertyCard from "@/components/PropertyCard";
+import AreasWeCover from "@/components/AreasWeCover";
 import {
   getProperties,
   getHomepageListings,
   getTestimonials,
   getWhyChoose,
-  getAreaGuides,
+  getCoverageAreas,
   getSite,
 } from "@/lib/data";
 
@@ -33,15 +34,17 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export default async function HomePage() {
-  const [SITE, properties, testimonials, whyChoose, areaGuides] =
+  const [SITE, properties, testimonials, whyChoose, coverageAreas] =
     await Promise.all([
       getSite(),
       getProperties(),
       getTestimonials(),
       getWhyChoose(),
-      getAreaGuides(),
+      getCoverageAreas(),
     ]);
   const homepageListings = getHomepageListings(properties);
+  const heroTagline =
+    SITE.tagline ?? "Premium Estate Agents Covering London & Kent";
 
   return (
     <>
@@ -49,7 +52,7 @@ export default async function HomePage() {
       <section className="relative flex min-h-[85vh] items-center justify-center">
         <Image
           src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80"
-          alt="Luxury property in South East London"
+          alt="Premium property in London and Kent"
           fill
           className="object-cover"
           priority
@@ -61,13 +64,12 @@ export default async function HomePage() {
           <p className="mb-4 animate-fade-in text-sm uppercase tracking-[0.3em] text-kingswell-gold">
             {SITE.slogan}
           </p>
-          <h1 className="animate-slide-up font-serif text-4xl font-normal tracking-wide text-white md:text-6xl lg:text-7xl">
-            <em className="not-italic text-kingswell-gold">Exclusively</em> South
-            East London
+          <h1 className="animate-slide-up font-serif text-4xl font-normal tracking-wide text-white md:text-5xl lg:text-6xl">
+            {heroTagline}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl animate-slide-up text-lg text-white/80 md:text-xl">
-            Premium estate agents in Catford, Lee, Hither Green & Lewisham.
-            Modern luxury. Local expertise. Trusted advisors.
+            Helping sellers, buyers, landlords and tenants across London & Kent.
+            Local expertise with wider London & Kent reach.
           </p>
 
           <div className="mt-10 flex animate-slide-up justify-center">
@@ -78,10 +80,16 @@ export default async function HomePage() {
             <Link href="/valuation" className="btn-primary">
               Book Valuation
             </Link>
-            <Link href="/properties/for-sale" className="btn-outline border-white text-white hover:bg-white hover:text-kingswell-green">
+            <Link
+              href="/properties/for-sale"
+              className="btn-outline border-white text-white hover:bg-white hover:text-kingswell-green"
+            >
               Properties For Sale
             </Link>
-            <Link href="/properties/to-rent" className="btn-outline border-white text-white hover:bg-white hover:text-kingswell-green">
+            <Link
+              href="/properties/to-rent"
+              className="btn-outline border-white text-white hover:bg-white hover:text-kingswell-green"
+            >
               Properties To Rent
             </Link>
             <Link href="/contact" className="btn-white">
@@ -96,11 +104,11 @@ export default async function HomePage() {
         <div className="gold-divider mb-6" />
         <h2 className="heading-section mb-6">Welcome to Kingswell</h2>
         <p className="text-lg leading-relaxed text-gray-600">
-          Kingswell Estate Agents is the go-to agency for discerning buyers,
-          sellers, and landlords in Catford, Lee, and Hither Green. We combine
-          modern luxury marketing with deep local knowledge — delivering a
-          premium, personal service that positions your property perfectly and
-          finds your ideal home faster.
+          Kingswell Estate Agents is a luxury boutique agency for discerning
+          buyers, sellers, landlords and tenants across London and Kent. We
+          combine premium marketing with deep local knowledge — delivering an
+          established, personal service that positions your property perfectly
+          and finds your ideal home faster.
         </p>
         <Link href="/about" className="btn-primary mt-8 inline-flex">
           Discover Kingswell
@@ -117,7 +125,7 @@ export default async function HomePage() {
             <p className="mt-4 text-gray-600">
               {homepageListings.length} listing
               {homepageListings.length !== 1 ? "s" : ""} from our portfolio
-              across South East London
+              across London & Kent
             </p>
           </div>
           {homepageListings.length === 0 ? (
@@ -164,45 +172,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Areas */}
-      <section className="bg-kingswell-green section-padding text-white">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <div className="gold-divider mb-6" />
-            <h2 className="font-serif text-3xl tracking-wide text-white md:text-4xl">
-              Areas We Cover
-            </h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {areaGuides.map((area) => (
-              <Link
-                key={area.slug}
-                href={`/areas/${area.slug}`}
-                className="group relative overflow-hidden rounded-sm"
-              >
-                <div className="relative aspect-[4/5]">
-                  <Image
-                    src={area.heroImage}
-                    alt={area.name}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="25vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-kingswell-green to-transparent" />
-                  <div className="absolute bottom-0 p-6">
-                    <h3 className="font-serif text-2xl text-white">
-                      {area.name}
-                    </h3>
-                    <p className="mt-1 text-sm text-kingswell-gold">
-                      {area.tagline}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AreasWeCover content={coverageAreas} />
 
       {/* Testimonials */}
       <section className="section-padding mx-auto max-w-7xl">
@@ -255,7 +225,7 @@ export default async function HomePage() {
           </h2>
           <p className="mt-4 text-lg text-white/80">
             Discover what your home is worth with a no-obligation valuation from
-            South East London&apos;s trusted luxury agents.
+            London & Kent&apos;s trusted luxury agents.
           </p>
           <Link href="/valuation" className="btn-primary mt-8">
             Book Valuation Now

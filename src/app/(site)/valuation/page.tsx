@@ -5,9 +5,9 @@ import LeadForm from "@/components/LeadForm";
 export const metadata = createMetadata({
   title: "Free Property Valuation",
   description:
-    "Book your free, no-obligation property valuation in Catford, Lee, Hither Green or Lewisham. Expert advice from Kingswell Estate Agents.",
+    "Book your free, no-obligation property valuation across London and Kent. Expert advice from Kingswell Estate Agents.",
   path: "/valuation",
-  keywords: ["property valuation Catford", "house valuation Lee"],
+  keywords: ["property valuation London", "house valuation Kent"],
 });
 
 const benefits = [
@@ -34,7 +34,7 @@ export default function ValuationPage() {
           Book Your Free Valuation
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-          Discover what your property is worth with South East London&apos;s
+          Discover what your property is worth with London & Kent&apos;s
           trusted luxury estate agents.
         </p>
       </section>

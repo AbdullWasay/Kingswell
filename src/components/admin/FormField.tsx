@@ -109,9 +109,6 @@ export function ImageUpload({
         onChange={handleUpload}
         className="text-sm text-gray-600"
       />
-      <p className="text-xs text-gray-500">
-        Stored on Cloudinary when configured. URL is saved to MongoDB.
-      </p>
       {value && (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={value} alt="Preview" className="h-24 rounded-sm object-cover" />

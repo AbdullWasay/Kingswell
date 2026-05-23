@@ -71,7 +71,7 @@ export default function PropertySearchBar({
       <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
         <input
           type="text"
-          placeholder="Location (e.g. Catford, Lee)"
+          placeholder="Location (e.g. London, Kent, Lewisham)"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           className="rounded-sm border border-gray-200 px-4 py-3 text-sm focus:border-kingswell-gold focus:outline-none lg:col-span-2"

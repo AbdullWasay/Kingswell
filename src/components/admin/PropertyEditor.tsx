@@ -133,7 +133,18 @@ export default function PropertyEditor({
               value={data.area}
               onChange={(e) => setData({ ...data, area: e.target.value })}
             >
-              {["Catford", "Lee", "Hither Green", "Lewisham"].map((a) => (
+              {[
+                "London",
+                "South East London",
+                "Kent",
+                "Catford",
+                "Lewisham",
+                "Bromley",
+                "Greenwich",
+                "Blackheath",
+                "Lee",
+                "Hither Green",
+              ].map((a) => (
                 <option key={a} value={a}>
                   {a}
                 </option>

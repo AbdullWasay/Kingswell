@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import siteData from "../../content/site.json";
 
 const SITE = siteData;
+const DEFAULT_TAGLINE =
+  "tagline" in SITE && typeof SITE.tagline === "string"
+    ? SITE.tagline
+    : "Premium Estate Agents Covering London & Kent";
 
 export function createMetadata({
   title,
@@ -16,22 +20,21 @@ export function createMetadata({
 }): Metadata {
   const fullTitle = title
     ? `${title} | ${SITE.name}`
-    : `${SITE.name} | Estate Agents in Catford, Lee & Hither Green`;
+    : `${SITE.name} | ${DEFAULT_TAGLINE}`;
   const desc =
     description ??
-    `Premium estate agents in Catford, Lee, Hither Green & Lewisham. ${SITE.slogan} Sales, lettings & free valuations.`;
+    `Helping sellers, buyers, landlords and tenants across London & Kent. ${SITE.slogan} Sales, lettings & free valuations.`;
 
   return {
     title: fullTitle,
     description: desc,
     keywords: [
-      "estate agents Catford",
-      "estate agents Lee",
-      "estate agents Hither Green",
-      "letting agents Catford",
-      "property for sale Catford",
-      "flats to rent Lee",
-      "houses for sale Hither Green",
+      "estate agents London",
+      "estate agents Kent",
+      "estate agents South East London",
+      "letting agents London",
+      "property for sale London",
+      "houses for sale Kent",
       ...keywords,
     ],
     openGraph: {
@@ -42,7 +45,7 @@ export function createMetadata({
       siteName: SITE.name,
     },
     alternates: {
-      canonical: path ? `https://kingswellagents.co.uk${path}` : undefined,
+      canonical: path ? `https://kingswellestateagents.co.uk${path}` : undefined,
     },
   };
 }
@@ -63,8 +66,17 @@ export function realEstateAgentSchema() {
       postalCode: "SE6 4JF",
       addressCountry: "GB",
     },
-    areaServed: ["Catford", "Lee", "Hither Green", "Lewisham", "South East London"],
-    url: "https://kingswellagents.co.uk",
+    areaServed: [
+      "London",
+      "Kent",
+      "South East London",
+      "Catford",
+      "Lewisham",
+      "Bromley",
+      "Greenwich",
+      "Blackheath",
+    ],
+    url: "https://kingswellestateagents.co.uk",
     priceRange: "£££",
   };
 }

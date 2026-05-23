@@ -8,9 +8,9 @@ export const dynamic = "force-dynamic";
 export const metadata = createMetadata({
   title: "Properties To Rent",
   description:
-    "Flats and houses to rent in Catford, Lee, Hither Green and Lewisham. Letting agents you can trust.",
+    "Flats and houses to rent across London and Kent. Premium letting agents you can trust.",
   path: "/properties/to-rent",
-  keywords: ["flats to rent Lee", "letting agents Catford"],
+  keywords: ["flats to rent London", "letting agents Kent"],
 });
 
 export default async function ToRentPage() {

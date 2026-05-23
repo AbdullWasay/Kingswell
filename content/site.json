@@ -1,9 +1,10 @@
 {
   "name": "Kingswell Estate Agents",
   "slogan": "Move Like Royalty, Move Well.",
-  "phone": "020 8123 4567",
-  "email": "hello@kingswellagents.co.uk",
-  "whatsapp": "447700900123",
+  "tagline": "Premium Estate Agents Covering London & Kent",
+  "phone": "020 8064 3668",
+  "email": "sales@kingswellestateagents.co.uk",
+  "whatsapp": "447367087204",
   "address": "12 Rushey Green, Catford, London SE6 4JF",
   "hours": {
     "weekdays": "Mon–Fri: 9:00am – 6:00pm",
@@ -14,5 +15,13 @@
     "instagram": "https://instagram.com/kingswellagents",
     "facebook": "https://facebook.com/kingswellagents",
     "linkedin": "https://linkedin.com/company/kingswellagents"
+  },
+  "prs": {
+    "legalName": "Kingswell Property Group Ltd",
+    "membershipNumber": "PRS058821",
+    "startDate": "20/05/2026",
+    "expiryDate": "19/05/2027",
+    "certificateImage": "/certificates/prs-membership.png",
+    "schemeUrl": "https://www.propertyredress.co.uk/"
   }
 }

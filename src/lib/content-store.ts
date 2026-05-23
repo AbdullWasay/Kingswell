@@ -13,6 +13,7 @@ export const CONTENT_KEYS = [
   "testimonials",
   "team",
   "areas",
+  "coverage-areas",
   "why-choose",
   "blog",
 ] as const;

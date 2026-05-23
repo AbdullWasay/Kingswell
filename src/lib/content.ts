@@ -1,5 +1,6 @@
 import { readContent } from "./content-store";
 import type { AreaGuide, Property, TeamMember, Testimonial } from "./types";
+import siteDefaults from "../../content/site.json";
 
 export interface BlogPost {
   slug: string;
@@ -11,9 +12,26 @@ export interface BlogPost {
   body: string;
 }
 
+export interface CoverageAreasContent {
+  title: string;
+  intro: string;
+  disclaimer: string;
+  areas: { name: string; blurb: string }[];
+}
+
+export interface PrsMembership {
+  legalName: string;
+  membershipNumber: string;
+  startDate: string;
+  expiryDate: string;
+  certificateImage: string;
+  schemeUrl: string;
+}
+
 export interface SiteConfig {
   name: string;
   slogan: string;
+  tagline?: string;
   phone: string;
   email: string;
   whatsapp: string;
@@ -28,6 +46,7 @@ export interface SiteConfig {
     facebook: string;
     linkedin: string;
   };
+  prs?: PrsMembership;
 }
 
 export interface WhyChooseItem {
@@ -38,11 +57,13 @@ export interface WhyChooseItem {
 
 export async function getSite() {
   const site = await readContent<SiteConfig>("site");
+  const defaults = siteDefaults as SiteConfig;
   return {
     ...site,
     phone: process.env.NEXT_PUBLIC_PHONE || site.phone,
     email: process.env.NEXT_PUBLIC_EMAIL || site.email,
     whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || site.whatsapp,
+    prs: site.prs ?? defaults.prs,
   };
 }
 
@@ -65,6 +86,10 @@ export async function getAreaGuides() {
 
 export async function getWhyChoose() {
   return readContent<WhyChooseItem[]>("why-choose");
+}
+
+export async function getCoverageAreas() {
+  return readContent<CoverageAreasContent>("coverage-areas");
 }
 
 export async function getBlogPosts() {

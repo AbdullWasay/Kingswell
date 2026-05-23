@@ -57,7 +57,7 @@ export default function PropertyListings({
       <section className="bg-kingswell-green py-16 text-center text-white">
         <h1 className="font-serif text-4xl md:text-5xl">{title}</h1>
         <p className="mt-4 text-white/70">
-          Catford · Lee · Hither Green · Lewisham
+          Premium listings across London & Kent
         </p>
       </section>
 

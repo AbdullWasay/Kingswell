@@ -9,6 +9,7 @@ const FILE_MAP: Record<ContentKey, string> = {
   testimonials: "testimonials.json",
   team: "team.json",
   areas: "areas.json",
+  "coverage-areas": "coverage-areas.json",
   "why-choose": "why-choose.json",
   blog: "blog.json",
 };

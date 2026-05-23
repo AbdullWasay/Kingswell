@@ -8,9 +8,9 @@ export const dynamic = "force-dynamic";
 export const metadata = createMetadata({
   title: "Properties For Sale",
   description:
-    "Browse houses and flats for sale in Catford, Lee, Hither Green and Lewisham. Premium listings from Kingswell Estate Agents.",
+    "Browse houses and flats for sale across London and Kent. Premium listings from Kingswell Estate Agents.",
   path: "/properties/for-sale",
-  keywords: ["property for sale Catford", "houses for sale Hither Green"],
+  keywords: ["property for sale London", "houses for sale Kent"],
 });
 
 export default async function ForSalePage() {

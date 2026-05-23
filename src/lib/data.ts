@@ -5,6 +5,7 @@ export {
   getTeam,
   getAreaGuides,
   getWhyChoose,
+  getCoverageAreas,
   getBlogPosts,
   getPropertyBySlug,
   getSimilarProperties,
@@ -19,4 +20,9 @@ export {
   sortPropertiesForDisplay,
 } from "./properties";
 
-export type { BlogPost, SiteConfig, WhyChooseItem } from "./content";
+export type {
+  BlogPost,
+  SiteConfig,
+  WhyChooseItem,
+  CoverageAreasContent,
+} from "./content";

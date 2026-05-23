@@ -4,9 +4,9 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Tenants",
   description:
-    "Renting in Catford, Lee, Hither Green or Lewisham? Guide to the renting process with Kingswell Estate Agents.",
+    "Renting across London and Kent? Guide to the renting process with Kingswell Estate Agents.",
   path: "/tenants",
-  keywords: ["flats to rent Lee", "renting Catford"],
+  keywords: ["flats to rent London", "renting Kent"],
 });
 
 const steps = [
@@ -38,15 +38,15 @@ export default function TenantsPage() {
       <section className="bg-kingswell-green py-20 text-center text-white">
         <h1 className="font-serif text-4xl md:text-6xl">Tenants</h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-          Finding your perfect rental in South East London
+          Finding your perfect rental across London & Kent
         </p>
       </section>
 
       <section className="section-padding mx-auto max-w-4xl text-center">
         <div className="gold-divider mb-6" />
         <p className="text-lg leading-relaxed text-gray-600">
-          Whether you&apos;re looking for a family home in Hither Green, a
-          studio in Lee, or a modern apartment in Lewisham — Kingswell makes
+          Whether you&apos;re looking for a family home in Kent, a
+          an apartment in Greenwich, or a rental in South East London — Kingswell makes
           renting straightforward, transparent, and stress-free.
         </p>
       </section>

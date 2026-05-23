@@ -55,6 +55,13 @@ export default function AdminSitePage() {
             onChange={(e) => setData({ ...data, slogan: e.target.value })}
           />
         </FormField>
+        <FormField label="Tagline (hero / positioning)">
+          <input
+            className={inputClass}
+            value={data.tagline ?? ""}
+            onChange={(e) => setData({ ...data, tagline: e.target.value })}
+          />
+        </FormField>
         <FormField label="Phone">
           <input
             className={inputClass}

@@ -6,7 +6,7 @@ import { getTeam } from "@/lib/data";
 export const metadata = createMetadata({
   title: "About Us",
   description:
-    "Meet the Kingswell team. Premium estate agents with deep local knowledge of Catford, Lee, Hither Green and Lewisham.",
+    "Meet the Kingswell team. Premium estate agents covering London & Kent with local expertise and boutique service.",
   path: "/about",
 });
 
@@ -24,7 +24,7 @@ export default async function AboutPage() {
         <div className="relative z-10 text-center text-white">
           <h1 className="font-serif text-4xl md:text-6xl">About Kingswell</h1>
           <p className="mt-4 text-xl text-kingswell-gold">
-            Move Like Royalty, Move Well.
+            Premium Estate Agents Covering London & Kent
           </p>
         </div>
       </section>
@@ -33,10 +33,11 @@ export default async function AboutPage() {
         <div className="gold-divider mb-6" />
         <h2 className="heading-section mb-6">Our Mission</h2>
         <p className="text-lg leading-relaxed text-gray-600">
-          Kingswell Estate Agents was founded to bring luxury agency standards
-          to South East London. We believe every client deserves a premium,
-          personal service — whether selling a family home in Catford, letting a
-          property in Lewisham, or finding the perfect flat in Lee.
+          Kingswell Estate Agents was founded to bring luxury boutique standards
+          to sellers, buyers, landlords and tenants across London and Kent. We
+          believe every client deserves a premium, personal service — whether
+          selling a period home in Blackheath, letting in Lewisham, or buying
+          across Bromley and Greenwich.
         </p>
       </section>
 
@@ -52,8 +53,8 @@ export default async function AboutPage() {
                 text: "Every property presented with professional photography, premium marketing, and the elegance your home deserves.",
               },
               {
-                title: "Deep Local Knowledge",
-                text: "We live and work in Catford, Lee, and Hither Green. We know every street, school, and selling point.",
+                title: "London & Kent Expertise",
+                text: "Local knowledge where it matters, with the reach and resources of a premium agency — from South East London to Kent towns and villages.",
               },
               {
                 title: "Personal Approach",

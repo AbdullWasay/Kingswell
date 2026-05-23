@@ -1,12 +1,13 @@
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { createMetadata } from "@/lib/seo";
 import { getSite } from "@/lib/data";
 import LeadForm from "@/components/LeadForm";
+import { whatsappUrl } from "@/lib/whatsapp";
 
 export const metadata = createMetadata({
   title: "Contact Us",
   description:
-    "Contact Kingswell Estate Agents. Visit us in Catford or call our team today.",
+    "Contact Kingswell Estate Agents. Call 020 8064 3668, email sales@kingswellestateagents.co.uk, or visit our Catford office.",
   path: "/contact",
 });
 
@@ -39,6 +40,15 @@ export default async function ContactPage() {
               >
                 <Mail className="h-5 w-5 text-kingswell-gold" />
                 {SITE.email}
+              </a>
+              <a
+                href={whatsappUrl("Hi Kingswell, I'd like to get in touch.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-600 hover:text-kingswell-green"
+              >
+                <MessageCircle className="h-5 w-5 text-kingswell-gold" />
+                WhatsApp: 07367 087204
               </a>
               <p className="flex items-start gap-3 text-gray-600">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-kingswell-gold" />

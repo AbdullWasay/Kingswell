@@ -1,0 +1,43 @@
+{
+  "title": "Areas We Cover",
+  "intro": "Kingswell combines boutique agency service with reach across London and Kent. Whether you are selling a period home in Blackheath, letting in Lewisham, or buying across Bromley and Greenwich, our team delivers local insight with a premium, established presence.",
+  "disclaimer": "The areas listed below reflect our core focus — we also work across wider London and Kent. Contact us to discuss your property, wherever you are in the region.",
+  "areas": [
+    {
+      "name": "London",
+      "blurb": "From established neighbourhoods to emerging pockets of value, we advise sellers, buyers, landlords and tenants across the capital with discretion, market intelligence and exceptional presentation."
+    },
+    {
+      "name": "South East London",
+      "blurb": "A dynamic market of Victorian terraces, riverside apartments and family homes. We understand the nuances of each neighbourhood — transport, schools and lifestyle — to position your property perfectly."
+    },
+    {
+      "name": "Kent",
+      "blurb": "Town, village and countryside properties across Kent deserve the same premium marketing and personal service as central London. Kingswell brings boutique expertise to sellers and buyers throughout the county."
+    },
+    {
+      "name": "Catford",
+      "blurb": "Excellent value, superb transport links and a thriving high street. Catford continues to attract buyers seeking space and authenticity within easy reach of central London."
+    },
+    {
+      "name": "Lewisham",
+      "blurb": "Regeneration, riverside living and strong rental demand make Lewisham one of the capital's most compelling markets for investors and families alike."
+    },
+    {
+      "name": "Bromley",
+      "blurb": "Leafy suburbs, outstanding schools and a refined residential character. Bromley remains a cornerstone market for families seeking quality homes with a village feel."
+    },
+    {
+      "name": "Greenwich",
+      "blurb": "Maritime heritage meets modern riverside living. Greenwich offers a distinctive lifestyle and a property market that commands premium prices for the right homes."
+    },
+    {
+      "name": "Blackheath",
+      "blurb": "Village elegance on the doorstep of the City. Period architecture, open heath and an enduring appeal to discerning buyers seeking timeless London living."
+    },
+    {
+      "name": "Surrounding Areas",
+      "blurb": "Our reach extends across neighbouring boroughs and towns throughout London and Kent. If your property falls outside the areas named here, we would still be delighted to assist."
+    }
+  ]
+}

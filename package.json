@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "tsx scripts/seed-mongodb.ts"
+    "seed": "tsx scripts/seed-mongodb.ts",
+    "sync:branding": "tsx scripts/sync-branding-content.ts"
   },
   "dependencies": {
     "@vercel/blob": "^2.4.0",

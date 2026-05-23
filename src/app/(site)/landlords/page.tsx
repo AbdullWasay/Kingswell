@@ -6,9 +6,9 @@ import LeadForm from "@/components/LeadForm";
 export const metadata = createMetadata({
   title: "Landlords",
   description:
-    "Lettings services for landlords in Catford, Lee, Hither Green and Lewisham. Fully managed, tenant find, and compliance support.",
+    "Lettings services for landlords across London and Kent. Fully managed, tenant find, and compliance support.",
   path: "/landlords",
-  keywords: ["letting agents Catford", "property management Lewisham"],
+  keywords: ["letting agents London", "property management Kent"],
 });
 
 const services = [
@@ -38,7 +38,7 @@ export default function LandlordsPage() {
       <section className="bg-kingswell-green py-20 text-center text-white">
         <h1 className="font-serif text-4xl md:text-6xl">Landlords</h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-          Premium lettings and property management in South East London
+          Premium lettings and property management across London & Kent
         </p>
       </section>
 

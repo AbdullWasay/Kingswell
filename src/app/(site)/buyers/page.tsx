@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Buyers",
   description:
-    "Your guide to buying property in Catford, Lee, Hither Green and Lewisham. Expert support from Kingswell Estate Agents.",
+    "Your guide to buying property across London and Kent. Expert support from Kingswell Estate Agents.",
   path: "/buyers",
 });
 
@@ -37,7 +37,7 @@ export default function BuyersPage() {
       <section className="bg-kingswell-green py-20 text-center text-white">
         <h1 className="font-serif text-4xl md:text-6xl">Buyers</h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-          Your journey to finding the perfect home in South East London
+          Your journey to finding the perfect home across London & Kent
         </p>
       </section>
 
