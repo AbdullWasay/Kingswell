@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PrsMembershipSection from "@/components/PrsMembershipSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Chatbot from "@/components/Chatbot";
 import { getSite } from "@/lib/content";
 import { realEstateAgentSchema } from "@/lib/seo";
 
@@ -26,6 +27,7 @@ export default async function SiteLayout({
       <main>{children}</main>
       <PrsMembershipSection prs={site.prs} />
       <Footer site={site} />
+      <Chatbot />
       <WhatsAppButton />
     </>
   );
