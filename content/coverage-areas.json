@@ -1,43 +1,78 @@
 {
   "title": "Areas We Cover",
-  "intro": "Kingswell combines boutique agency service with reach across London and Kent. Whether you are selling a period home in Blackheath, letting in Lewisham, or buying across Bromley and Greenwich, our team delivers local insight with a premium, established presence.",
+  "intro": "Kingswell combines boutique agency service with reach across London and Kent. Whether you are selling a period home in Blackheath, letting in Lewisham, or buying in Hither Green, Bromley or Greenwich, our team delivers local insight with a premium, established presence.",
   "disclaimer": "The areas listed below reflect our core focus — we also work across wider London and Kent. Contact us to discuss your property, wherever you are in the region.",
   "areas": [
     {
       "name": "London",
+      "slug": "london",
+      "tagline": "Capital living, expertly advised",
+      "image": "/images/areas/london.jpg",
       "blurb": "From established neighbourhoods to emerging pockets of value, we advise sellers, buyers, landlords and tenants across the capital with discretion, market intelligence and exceptional presentation."
     },
     {
       "name": "South East London",
+      "slug": "south-east-london",
+      "tagline": "Victorian charm meets urban energy",
+      "image": "/images/areas/south-east-london.jpg",
       "blurb": "A dynamic market of Victorian terraces, riverside apartments and family homes. We understand the nuances of each neighbourhood — transport, schools and lifestyle — to position your property perfectly."
     },
     {
       "name": "Kent",
+      "slug": "kent",
+      "tagline": "Town, village & countryside",
+      "image": "/images/areas/kent.jpg",
       "blurb": "Town, village and countryside properties across Kent deserve the same premium marketing and personal service as central London. Kingswell brings boutique expertise to sellers and buyers throughout the county."
     },
     {
       "name": "Catford",
+      "slug": "catford",
+      "tagline": "Value, transport & community",
+      "image": "/images/areas/catford.jpg",
       "blurb": "Excellent value, superb transport links and a thriving high street. Catford continues to attract buyers seeking space and authenticity within easy reach of central London."
     },
     {
       "name": "Lewisham",
+      "slug": "lewisham",
+      "tagline": "Riverside regeneration",
+      "image": "/images/areas/lewisham.jpg",
       "blurb": "Regeneration, riverside living and strong rental demand make Lewisham one of the capital's most compelling markets for investors and families alike."
     },
     {
+      "name": "Hither Green",
+      "slug": "hither-green",
+      "tagline": "Leafy streets & village charm",
+      "image": "/images/areas/hither-green.jpg",
+      "blurb": "A sought-after enclave of leafy streets, excellent schools and village charm. Family homes and period properties here command strong interest from buyers seeking space and community within easy reach of the City."
+    },
+    {
       "name": "Bromley",
+      "slug": "bromley",
+      "tagline": "Suburban refinement",
+      "image": "/images/areas/bromley.jpg",
       "blurb": "Leafy suburbs, outstanding schools and a refined residential character. Bromley remains a cornerstone market for families seeking quality homes with a village feel."
     },
     {
       "name": "Greenwich",
+      "slug": "greenwich",
+      "tagline": "Maritime heritage & riverside",
+      "image": "/images/areas/greenwich.jpg",
       "blurb": "Maritime heritage meets modern riverside living. Greenwich offers a distinctive lifestyle and a property market that commands premium prices for the right homes."
     },
     {
       "name": "Blackheath",
+      "slug": "blackheath",
+      "tagline": "Timeless village elegance",
+      "image": "/images/areas/blackheath.jpg",
       "blurb": "Village elegance on the doorstep of the City. Period architecture, open heath and an enduring appeal to discerning buyers seeking timeless London living."
     },
     {
       "name": "Surrounding Areas",
-      "blurb": "Our reach extends across neighbouring boroughs and towns throughout London and Kent. If your property falls outside the areas named here, we would still be delighted to assist."
+      "slug": "surrounding",
+      "tagline": "Wider London & Kent reach",
+      "image": "/images/areas/surrounding.jpg",
+      "blurb": "Our reach extends across neighbouring boroughs and towns throughout London and Kent. If your property falls outside the areas named here, we would still be delighted to assist.",
+      "featured": true
     }
   ]
 }

@@ -16,7 +16,14 @@ export interface CoverageAreasContent {
   title: string;
   intro: string;
   disclaimer: string;
-  areas: { name: string; blurb: string }[];
+  areas: {
+    name: string;
+    slug?: string;
+    tagline?: string;
+    image: string;
+    blurb: string;
+    featured?: boolean;
+  }[];
 }
 
 export interface PrsMembership {
