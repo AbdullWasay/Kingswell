@@ -7,6 +7,8 @@ Upload images here, then reference them in `content/*.json` with a leading slash
 - `/images/blog/market-update.jpg`
 
 Subfolders:
+- `hero/` — homepage hero and CTA backgrounds (UK / London property imagery)
+- `areas/` — “Areas we cover” card photos
 - `properties/` — listing photos
 - `team/` — staff headshots
 - `blog/` — blog hero images

@@ -1,30 +1,52 @@
 [
   {
-    "id": "1",
-    "name": "Sarah Mitchell",
-    "text": "Kingswell made selling our Catford home effortless. Professional photography, brilliant marketing, and we achieved above asking price within two weeks.",
+    "id": "review-sergio-franco",
+    "name": "Sergio Franco",
+    "text": "I couldn't be happier with my estate agent, Gabriel at Catford, who sold my house recently. His expertise in the market and strategic approach resulted in a successful sale achieving more than I expected. He navigated the entire experience with professionalism, keeping me informed and easing any concerns. Quick responses to messages and calls showcased his dedication. His valuable tips and advice were instrumental. I felt confident and well informed every step of the way. Gabriel created a comfortable atmosphere fostering a great relationship. His personable approach made the entire experience enjoyable. I highly appreciate his dedication, expertise and genuine connection. I would highly recommend Gabriel to anyone seeking a dedicated and effective estate agent. Thank you so much Gabriel.",
     "rating": 5,
-    "date": "2026-03-15"
+    "date": "2026-02-20",
+    "source": "google"
   },
   {
-    "id": "2",
-    "name": "James & Priya Okonkwo",
-    "text": "As first-time buyers in Lee, the team guided us through every step. Their local knowledge was invaluable — we found our dream home in Hither Green.",
+    "id": "review-novelle-clark",
+    "name": "Novelle Clark",
+    "text": "Outstanding service from Gabriel. His knowledgeable and supportive approach made the process stress-free and kept me well-informed throughout. Highly recommend.",
     "rating": 5,
-    "date": "2026-02-28"
+    "date": "2026-02-18",
+    "source": "google"
   },
   {
-    "id": "3",
-    "name": "David Chen",
-    "text": "Our rental property in Lewisham is managed flawlessly. Kingswell handle everything — tenants, compliance, maintenance. Highly recommend their fully managed service.",
+    "id": "review-matt-wooding",
+    "name": "Matt Wooding",
+    "text": "Kingswell have provided a fantastic service and in particular Gabriel. Without his cool head and quick thinking our sale and purchase wouldn't have happened. A talented man and a pleasure to deal with.",
     "rating": 5,
-    "date": "2026-01-20"
+    "date": "2026-02-22",
+    "source": "google"
   },
   {
-    "id": "4",
-    "name": "Emma Richardson",
-    "text": "Fast communication, honest advice, and a genuinely personal approach. Kingswell are the go-to agents in South East London.",
+    "id": "review-glenn-morrison",
+    "name": "Glenn Morrison",
+    "text": "I am in the process of buying a house and I have to say that Gabriel from the sales team has been by far and away the best agent we have come across. He has continuously gone the extra mile for us! Thank you so much for your help Gabe.",
     "rating": 5,
-    "date": "2025-12-10"
+    "date": "2026-02-25",
+    "source": "google"
+  },
+  {
+    "id": "review-orla-jackson",
+    "name": "Orla Jackson",
+    "text": "Great experience selling our house recently with Gabe and Ramsay as our main contacts. It was all very smooth, and they were really on it with all the follow up. Would recommend!",
+    "rating": 5,
+    "date": "2026-05-19",
+    "source": "google",
+    "isNew": true
+  },
+  {
+    "id": "review-mike-mair",
+    "name": "Mike Mair",
+    "text": "Professional team that got the job done. 👍",
+    "rating": 5,
+    "date": "2026-05-05",
+    "source": "google",
+    "isNew": true
   }
 ]

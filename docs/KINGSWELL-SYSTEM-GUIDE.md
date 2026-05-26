@@ -11,7 +11,7 @@ Kingswell has two parts:
 | Part | Who uses it | Purpose |
 |------|-------------|---------|
 | **Public website** | Buyers, sellers, landlords, tenants | Browse properties, learn about Kingswell, contact you, book valuations |
-| **Admin panel** | Kingswell staff only | Update content, add properties, manage reviews and blog posts |
+| **Admin panel** | Kingswell staff only | Update content, properties, form enquiries, reviews, and blog posts |
 
 When you save changes in the admin panel, they appear on the live website shortly afterwards—there is no separate “publish” step.
 
@@ -96,26 +96,8 @@ After logging in, use the **menu on the left** to move between sections.
 
 ### Dashboard
 
-- Quick overview of how many properties, blog posts, testimonials, team members, and area guides you have.
+- Quick overview of how many properties, form enquiries, blog posts, testimonials, team members, and area guides you have.
 - Shortcuts to open each section.
-
-### Form Enquiries
-
-View **every form submission** from the website in one place:
-
-- **Contact page** — general enquiries  
-- **Valuation page** — free valuation requests (address, property type, sell/let intent)  
-- **Property pages** — viewing requests for a specific listing  
-- **Landlords page** — landlord / lettings enquiries  
-
-**You can:**
-
-- See name, email, phone, date, and enquiry type  
-- Expand each entry for full details (message, property address, etc.)  
-- Filter by enquiry type  
-- Delete an entry when no longer needed (e.g. after you have dealt with it)  
-
-New submissions appear automatically as soon as someone submits a form. Email notifications still send if your email service is configured.
 
 ### Site Settings
 
@@ -169,6 +151,14 @@ This is where you manage everything you sell or let.
 - **Edit** or remove posts  
 - Posts appear on the Blog page for visitors and help with search engines  
 
+### Form Enquiries
+
+- View **all form responses** from the website in one place (not only email)  
+- Covers: **Contact** (general enquiry), **Valuation** (address, property type, sell/let intent), **Viewing** (on a property page, tied to that listing), and **Landlord** (lettings / management service)  
+- For each submission: name, email, phone, enquiry type, and date; expand for full message and extra fields (property address, service type, etc.)  
+- **Filter** by enquiry type; **delete** an entry when you have dealt with it  
+- New submissions appear **automatically** as soon as someone submits a form; copies still go to your **email inbox** when email is configured  
+
 ### Testimonials
 
 - Add, edit, or remove **client reviews** (name, review text, star rating, date)  
@@ -183,7 +173,7 @@ This is where you manage everything you sell or let.
 
 - Edit detailed guides for individual areas (e.g. Catford, Lee, Hither Green, Lewisham)  
 - Includes overview, schools, transport, lifestyle, market notes, and a hero image  
-- These are separate from the homepage “Areas We Cover” cards (those use photos stored in the project folder—ask your developer to swap images if needed)  
+- These are separate from the homepage **“Areas We Cover”** cards (those use photos stored in the project folder—ask your developer to swap images if needed)  
 
 ### Why Choose
 
@@ -222,7 +212,7 @@ The site is set up to present Kingswell as:
 - Covering **London & Kent** (not only one small neighbourhood)  
 - With strong local knowledge and wider reach  
 - Contact: **020 8064 3668**, **sales@kingswellestateagents.co.uk**, WhatsApp **07367 087204**  
-- Office: **12 Rushey Green, Catford, London SE6 4JF**  
+- Registered office: **66 Paul Street, London, EC2A 4NA**  
 
 If any of these details change, update **Site Settings** in the admin panel (and tell your developer if legal/PRS wording must change).
 
@@ -232,7 +222,6 @@ If any of these details change, update **Site Settings** in the admin panel (and
 
 | Task | Where to handle it |
 |------|-------------------|
-| Read contact / valuation form submissions | **Admin → Form Enquiries** (also email if configured) |
 | Reply to WhatsApp messages | WhatsApp on your phone |
 | Change chat AI API key | Developer / hosting settings (Gemini) |
 | Change homepage area photos | Developer (`public/images/areas/`) |
@@ -262,9 +251,10 @@ Why Choose:/kingswell-admin/why-choose
 1. **New listing** — Admin → Properties → Add new → fill details → upload photos → Status “Available” → Save.  
 2. **Offer accepted** — Edit property → Status “Under offer”.  
 3. **Completed sale/let** — Edit property → Status “Sold” or “Let agreed” (it disappears from the public site).  
-4. **New review** — Testimonials → add review → Save.  
-5. **Phone/email change** — Site Settings → update → Save.  
-6. **Blog post** — Blog → New post → write article → Save.  
+4. **New form enquiry** — Form Enquiries → open entry → contact the customer → delete when done.  
+5. **New review** — Testimonials → add review → Save.  
+6. **Phone/email change** — Site Settings → update → Save.  
+7. **Blog post** — Blog → New post → write article → Save.  
 
 ---
 
@@ -273,7 +263,8 @@ Why Choose:/kingswell-admin/why-choose
 - **Website or admin not loading** — Contact your developer or hosting support.  
 - **Forgotten admin password** — Developer can reset `ADMIN_PASSWORD` in secure settings.  
 - **Chat not answering** — Check Gemini API key and billing with your developer.  
-- **Forms not arriving** — Check leads email and spam folder; developer checks email/CRM setup.  
+- **Forms not in admin** — Confirm `MONGODB_URI` is set on hosting; submit a test form.  
+- **Forms not in email** — Check leads email and spam folder; developer checks Resend / `LEADS_EMAIL`.  
 
 ---
 

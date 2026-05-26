@@ -34,20 +34,23 @@ export default function PropertySearchBar({
 
   const isHero = variant === "hero";
 
+  const fieldClass =
+    "min-h-[48px] w-full rounded-sm border border-gray-200 px-4 py-3 text-base focus:border-kingswell-gold focus:outline-none focus:ring-1 focus:ring-kingswell-gold/30 sm:text-sm";
+
   return (
     <form
       onSubmit={handleSearch}
       className={`w-full max-w-4xl ${
         isHero
-          ? "rounded-sm bg-white/95 p-4 shadow-2xl backdrop-blur md:p-6"
-          : "rounded-sm border border-gray-200 bg-white p-4"
+          ? "rounded-sm bg-white/97 p-4 shadow-2xl backdrop-blur-sm sm:p-5 md:p-6"
+          : "rounded-sm border border-gray-200 bg-white p-4 sm:p-5"
       }`}
     >
       <div className="mb-4 flex gap-2">
         <button
           type="button"
           onClick={() => setType("sale")}
-          className={`flex-1 rounded-sm py-2 text-sm font-semibold uppercase tracking-wider transition ${
+          className={`min-h-[44px] flex-1 rounded-sm py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 ${
             type === "sale"
               ? "bg-kingswell-green text-white"
               : "bg-gray-100 text-gray-600"
@@ -58,7 +61,7 @@ export default function PropertySearchBar({
         <button
           type="button"
           onClick={() => setType("let")}
-          className={`flex-1 rounded-sm py-2 text-sm font-semibold uppercase tracking-wider transition ${
+          className={`min-h-[44px] flex-1 rounded-sm py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 ${
             type === "let"
               ? "bg-kingswell-green text-white"
               : "bg-gray-100 text-gray-600"
@@ -68,32 +71,32 @@ export default function PropertySearchBar({
         </button>
       </div>
 
-      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         <input
           type="text"
-          placeholder="Location (e.g. London, Kent, Lewisham)"
+          placeholder="London, Kent, Lewisham…"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
-          className="rounded-sm border border-gray-200 px-4 py-3 text-sm focus:border-kingswell-gold focus:outline-none lg:col-span-2"
+          className={`${fieldClass} lg:col-span-2`}
         />
         <input
           type="number"
           placeholder={type === "sale" ? "Min price £" : "Min rent £"}
           value={minPrice}
           onChange={(e) => setMinPrice(e.target.value)}
-          className="rounded-sm border border-gray-200 px-4 py-3 text-sm focus:border-kingswell-gold focus:outline-none"
+          className={fieldClass}
         />
         <input
           type="number"
           placeholder={type === "sale" ? "Max price £" : "Max rent £"}
           value={maxPrice}
           onChange={(e) => setMaxPrice(e.target.value)}
-          className="rounded-sm border border-gray-200 px-4 py-3 text-sm focus:border-kingswell-gold focus:outline-none"
+          className={fieldClass}
         />
         <select
           value={bedrooms}
           onChange={(e) => setBedrooms(e.target.value)}
-          className="rounded-sm border border-gray-200 px-4 py-3 text-sm focus:border-kingswell-gold focus:outline-none"
+          className={fieldClass}
         >
           <option value="">Bedrooms</option>
           <option value="1">1+</option>
@@ -104,10 +107,15 @@ export default function PropertySearchBar({
         </select>
       </div>
 
-      <button type="submit" className="btn-primary mt-4 w-full md:w-auto">
-        <Search className="h-4 w-4" />
-        Search Properties
-      </button>
+      <div className="mt-5 flex justify-center">
+        <button
+          type="submit"
+          className="btn-primary w-full max-w-sm sm:min-w-[240px] sm:w-auto"
+        >
+          <Search className="h-4 w-4" />
+          Search properties
+        </button>
+      </div>
     </form>
   );
 }

@@ -30,7 +30,10 @@ export default function AreasWeCover({ content }: { content: CoverageAreasConten
   const featuredArea = content.areas.find((a) => a.featured);
 
   return (
-    <section id="areas-we-cover" className="bg-[#faf9f7] section-padding scroll-mt-24">
+    <section
+      id="areas-we-cover"
+      className="scroll-mt-[5.5rem] bg-[#faf9f7] section-padding sm:scroll-mt-24"
+    >
       <div className="mx-auto max-w-4xl text-center">
         <div className="gold-divider mb-6" />
         <p className="mb-3 text-sm uppercase tracking-[0.25em] text-kingswell-gold">

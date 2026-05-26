@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
 import { getProperties, getAreaGuides, getBlogPosts } from "@/lib/data";
 
-const BASE = "https://kingswellagents.co.uk";
+import { getSiteUrl } from "@/lib/site-url";
+
+const BASE = getSiteUrl();
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [properties, areaGuides, blogPosts] = await Promise.all([

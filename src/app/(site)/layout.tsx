@@ -2,11 +2,11 @@ export const dynamic = "force-dynamic";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PrsMembershipSection from "@/components/PrsMembershipSection";
+import PartnersSection from "@/components/PartnersSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Chatbot from "@/components/Chatbot";
 import { getSite } from "@/lib/content";
-import { realEstateAgentSchema } from "@/lib/seo";
+import { realEstateAgentSchema, websiteSchema } from "@/lib/seo";
 
 export default async function SiteLayout({
   children,
@@ -20,12 +20,15 @@ export default async function SiteLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(realEstateAgentSchema()),
+          __html: JSON.stringify([
+            realEstateAgentSchema(),
+            websiteSchema(),
+          ]),
         }}
       />
       <Header site={site} />
       <main>{children}</main>
-      <PrsMembershipSection prs={site.prs} />
+      <PartnersSection />
       <Footer site={site} />
       <Chatbot />
       <WhatsAppButton />

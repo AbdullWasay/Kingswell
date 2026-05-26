@@ -30,6 +30,8 @@ export interface Testimonial {
   text: string;
   rating: number;
   date: string;
+  source?: "google";
+  isNew?: boolean;
 }
 
 export interface TeamMember {

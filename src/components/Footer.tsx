@@ -10,6 +10,7 @@ import {
   Clock,
 } from "lucide-react";
 import type { SiteConfig } from "@/lib/content";
+import { formatPhone, telHref } from "@/lib/phone";
 
 const linkGroups = [
   {
@@ -40,20 +41,9 @@ const linkGroups = [
   },
 ];
 
-function formatPhone(phone: string): string {
-  const digits = phone.replace(/\D/g, "");
-  if (digits.startsWith("44") && digits.length >= 12) {
-    return `+${digits.slice(0, 2)} ${digits.slice(2, 4)} ${digits.slice(4, 7)} ${digits.slice(7)}`;
-  }
-  if (digits.length === 11 && digits.startsWith("0")) {
-    return `${digits.slice(0, 3)} ${digits.slice(3, 7)} ${digits.slice(7)}`;
-  }
-  return phone;
-}
-
 export default function Footer({ site }: { site: SiteConfig }) {
   const phoneDisplay = formatPhone(site.phone);
-  const phoneHref = site.phone.replace(/\s/g, "");
+  const phoneHref = telHref(site.phone);
 
   return (
     <footer className="bg-kingswell-green text-white">
@@ -120,7 +110,12 @@ export default function Footer({ site }: { site: SiteConfig }) {
             <ul className="space-y-3 text-sm text-white/75">
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-kingswell-gold" />
-                <span className="min-w-0 leading-relaxed">{site.address}</span>
+                <span className="min-w-0 leading-relaxed">
+                  <span className="block text-white/50 text-xs uppercase tracking-wider mb-0.5">
+                    Registered office
+                  </span>
+                  {site.address}
+                </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 shrink-0 text-kingswell-gold" />

@@ -3,12 +3,14 @@ import { createMetadata } from "@/lib/seo";
 import { getSite } from "@/lib/data";
 import LeadForm from "@/components/LeadForm";
 import { whatsappUrl } from "@/lib/whatsapp";
+import { formatPhone, telHref } from "@/lib/phone";
 
 export const metadata = createMetadata({
   title: "Contact Us",
   description:
-    "Contact Kingswell Estate Agents. Call 020 8064 3668, email sales@kingswellestateagents.co.uk, or visit our Catford office.",
+    "Contact Kingswell Estate Agents. Call 020 8064 3668, email sales@kingswellestateagents.co.uk. Registered office: 66 Paul Street, London EC2A 4NA.",
   path: "/contact",
+  keywords: ["contact estate agents London", "Kingswell EC2A"],
 });
 
 export default async function ContactPage() {
@@ -28,11 +30,11 @@ export default async function ContactPage() {
 
             <div className="mt-10 space-y-4">
               <a
-                href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+                href={telHref(SITE.phone)}
                 className="flex items-center gap-3 text-gray-600 hover:text-kingswell-green"
               >
                 <Phone className="h-5 w-5 text-kingswell-gold" />
-                {SITE.phone}
+                {formatPhone(SITE.phone)}
               </a>
               <a
                 href={`mailto:${SITE.email}`}
@@ -69,8 +71,8 @@ export default async function ContactPage() {
 
           <div className="relative h-[500px] overflow-hidden rounded-sm">
             <iframe
-              title="Kingswell office location"
-              src="https://maps.google.com/maps?q=Rushey+Green+Catford+SE6&z=15&output=embed"
+              title="Kingswell registered office — 66 Paul Street, London EC2A 4NA"
+              src="https://maps.google.com/maps?q=66+Paul+Street+London+EC2A+4NA&z=16&output=embed"
               className="h-full w-full border-0"
               loading="lazy"
             />

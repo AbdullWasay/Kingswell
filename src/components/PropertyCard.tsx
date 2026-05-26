@@ -30,7 +30,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       <Link href={`${basePath}/${property.slug}`} className="relative block aspect-[4/3] overflow-hidden">
         <Image
           src={property.images[0]}
-          alt={property.title}
+          alt={`${property.title} — ${property.bedrooms} bedroom ${property.type === "sale" ? "for sale" : "to rent"} in ${property.area}`}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 33vw"

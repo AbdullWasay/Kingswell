@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx scripts/seed-mongodb.ts",
-    "sync:branding": "tsx scripts/sync-branding-content.ts"
+    "sync:branding": "tsx scripts/sync-branding-content.ts",
+    "sync:testimonials": "tsx scripts/sync-testimonials.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
