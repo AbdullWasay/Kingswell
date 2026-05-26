@@ -1,10 +1,20 @@
 import { NextResponse } from "next/server";
 import siteData from "../../../../content/site.json";
+import { saveLead } from "@/lib/leads-store";
+import type { LeadFormType } from "@/lib/types";
+
+const VALID_FORM_TYPES: LeadFormType[] = [
+  "valuation",
+  "viewing",
+  "enquiry",
+  "landlord",
+];
 
 /**
- * Lead capture API — connects to email & CRM
+ * Lead capture API — saves to MongoDB, email & CRM
  *
  * Production setup:
+ * - MONGODB_URI (required for admin enquiry list)
  * - Set CRM_PROVIDER env (alto | reapit | street)
  * - Set CRM_API_KEY and CRM_WEBHOOK_URL
  * - Set RESEND_API_KEY or SMTP for email notifications
@@ -14,10 +24,29 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    const lead = {
+    const formType = VALID_FORM_TYPES.includes(body.formType)
+      ? (body.formType as LeadFormType)
+      : "enquiry";
+
+    const lead = await saveLead({
+      formType,
+      firstName: body.firstName,
+      lastName: body.lastName,
+      email: body.email,
+      phone: body.phone,
+      message: body.message,
+      address: body.address,
+      propertyType: body.propertyType,
+      intent: body.intent,
+      service: body.service,
+      propertyTitle: body.propertyTitle,
+    });
+
+    const leadPayload = {
+      ...lead,
       ...body,
-      receivedAt: new Date().toISOString(),
-      source: "kingswell-website",
+      receivedAt: lead.receivedAt,
+      source: lead.source,
     };
 
     // Email notification (configure RESEND_API_KEY in production)
@@ -33,8 +62,8 @@ export async function POST(request: Request) {
         body: JSON.stringify({
           from: "Kingswell Website <leads@kingswellagents.co.uk>",
           to: leadsEmail,
-          subject: `New ${body.formType} enquiry from ${body.firstName} ${body.lastName}`,
-          html: `<pre>${JSON.stringify(lead, null, 2)}</pre>`,
+          subject: `New ${formType} enquiry from ${body.firstName} ${body.lastName}`,
+          html: `<pre>${JSON.stringify(leadPayload, null, 2)}</pre>`,
         }),
       });
     }
@@ -50,14 +79,14 @@ export async function POST(request: Request) {
         },
         body: JSON.stringify({
           provider: process.env.CRM_PROVIDER || "generic",
-          lead,
+          lead: leadPayload,
         }),
       });
     }
 
     // Log in development
     if (process.env.NODE_ENV === "development") {
-      console.log("[Lead captured]", lead);
+      console.log("[Lead captured]", leadPayload);
     }
 
     return NextResponse.json({ success: true });

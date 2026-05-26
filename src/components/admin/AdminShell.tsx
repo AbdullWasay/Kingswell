@@ -14,10 +14,12 @@ import {
   Settings,
   LogOut,
   ExternalLink,
+  Inbox,
 } from "lucide-react";
 
 const nav = [
   { href: "/kingswell-admin/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/kingswell-admin/leads", label: "Form Enquiries", icon: Inbox },
   { href: "/kingswell-admin/site", label: "Site Settings", icon: Settings },
   { href: "/kingswell-admin/properties", label: "Properties", icon: Building2 },
   { href: "/kingswell-admin/blog", label: "Blog", icon: FileText },

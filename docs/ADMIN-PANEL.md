@@ -28,6 +28,7 @@ npm run seed
 | Section | Actions |
 |---------|---------|
 | **Dashboard** | Overview and quick links |
+| **Form Enquiries** | All contact, valuation, viewing, and landlord form submissions |
 | **Site Settings** | Phone, email, WhatsApp, address, hours, social links |
 | **Properties** | Add, edit, delete listings; upload photos; set featured |
 | **Blog** | Create and edit property insight articles |
@@ -65,13 +66,13 @@ openssl rand -base64 32
 - Session expires after 8 hours
 - Change default password before going live
 
-## Leads & CRM
+## Form enquiries
 
-Form submissions (valuation, contact, viewings) are **not** in the admin panel — they go to:
+All form submissions are stored in MongoDB (`leads` collection) and visible under **Form Enquiries** in the admin panel.
+
+They are also sent to:
 - Email (`RESEND_API_KEY` + `LEADS_EMAIL`)
-- CRM webhook (`CRM_WEBHOOK_URL`)
-
-Check your email inbox and CRM dashboard for leads.
+- CRM webhook (`CRM_WEBHOOK_URL`) when configured
 
 ## Production on Vercel
 

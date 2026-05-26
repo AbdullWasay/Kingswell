@@ -52,3 +52,22 @@ export interface AreaGuide {
   marketInsights: string;
   amenities: string[];
 }
+
+export type LeadFormType = "valuation" | "viewing" | "enquiry" | "landlord";
+
+export interface LeadSubmission {
+  id: string;
+  formType: LeadFormType;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  message?: string;
+  address?: string;
+  propertyType?: string;
+  intent?: string;
+  service?: string;
+  propertyTitle?: string;
+  receivedAt: string;
+  source: string;
+}

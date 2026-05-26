@@ -7,6 +7,7 @@ import {
   Users,
   MapPin,
   Settings,
+  Inbox,
 } from "lucide-react";
 import {
   getProperties,
@@ -15,8 +16,15 @@ import {
   getTeam,
   getAreaGuides,
 } from "@/lib/content";
+import { getLeadCount } from "@/lib/leads-store";
 
 const cards = [
+  {
+    href: "/kingswell-admin/leads",
+    label: "Form Enquiries",
+    icon: Inbox,
+    key: "leads" as const,
+  },
   {
     href: "/kingswell-admin/properties",
     label: "Properties",
@@ -51,15 +59,18 @@ const cards = [
 ];
 
 export default async function AdminDashboardPage() {
-  const [properties, blog, testimonials, team, areas] = await Promise.all([
-    getProperties(),
-    getBlogPosts(),
-    getTestimonials(),
-    getTeam(),
-    getAreaGuides(),
-  ]);
+  const [properties, blog, testimonials, team, areas, leadCount] =
+    await Promise.all([
+      getProperties(),
+      getBlogPosts(),
+      getTestimonials(),
+      getTeam(),
+      getAreaGuides(),
+      getLeadCount(),
+    ]);
 
   const counts: Record<string, number> = {
+    leads: leadCount,
     properties: properties.length,
     blog: blog.length,
     testimonials: testimonials.length,
@@ -102,7 +113,8 @@ export default async function AdminDashboardPage() {
           <li>Add properties under Properties → Add New</li>
           <li>Upload images directly in each form</li>
           <li>Mark properties as Featured to show on homepage</li>
-          <li>Leads from forms still go to your email / CRM</li>
+          <li>View all form submissions under Form Enquiries</li>
+          <li>Enquiries are also emailed when Resend is configured</li>
         </ul>
       </div>
     </AdminShell>
